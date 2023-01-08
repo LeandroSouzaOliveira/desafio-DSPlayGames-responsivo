@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 /*Elements*/
+:root {
+  --bg-color-green: #38af90;
+  --bg-color-ligth-gray: #f0f0f0;
+  --bg-color-light-pink: #dd7e92;
+  --bg-color-white: #fff;
+  --text-color-white: #fff;
+  --text-color-dark-gray: #797979;
+  --text-color-green: #38af90;
+  --text-color-light-pink: #dd7e92;
+  --line-horizontal-color: #38af90;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
-
-:root {
-  --bg-color-green: #38af90;
-  --bg-color-ligth-gray: #F0F0F0;
-  --bg-color-light-pink: #DD7E92;
-  --text-color-white: #fff;
-  --text-color-dark-gray: #797979;
-  --text-color-green: #38AF90;
-  --text-color-light-pink: #DD7E92;
-  --line-horizontal-color: #38AF90;
 }
 
 header {
@@ -43,16 +44,17 @@ nav img {
   padding: 14px 10px;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
   color: unset;
 }
 
 hr {
-    width: 90%;
-    margin: 3px 12px 1px 12px;
-    border-width: 1px;
-    border-color: var(--line-horizontal-color);
+  width: 90%;
+  margin: 3px 12px 1px 12px;
+  border-width: 1px;
+  border-color: var(--line-horizontal-color);
 }
 
 /*Id's and Class*/
@@ -63,68 +65,128 @@ hr {
 }
 
 .border-radius {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 #latest-news {
-    margin: 28px 10px;
+  background-color: var(--bg-color-white);
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 #latest-news h2 {
-    color: var(--text-color-dark-gray);
-    font-size: 24px;
-    margin: 40px 0px 8px 0px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
+  color: var(--text-color-dark-gray);
+  font-size: 24px;
+  margin: 40px 0px 8px 0px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
-.bg-news-container {
-    background-color: var(--bg-color-ligth-gray);
-}
-
-.news-contents-container {
-    margin-bottom: 28px;
+.latest-news-card {
+  background-color: var(--bg-color-ligth-gray);
+  width: calc(100% - 20px);
+  margin: 28px 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-news {
-    font-size: 16px;
-    color: var(--text-color-green);
-    padding: 16px 12px 3px 12px;
+  font-size: 16px;
+  color: var(--text-color-green);
+  padding: 16px 12px 3px 12px;
 }
 
 .subtitle-news {
-    font-size: 12px;
-    color: var(--text-color-dark-gray);
-    padding: 3px 12px;
+  font-size: 12px;
+  color: var(--text-color-dark-gray);
+  padding: 3px 12px;
 }
 
 .date-news {
-    font-size: 10px;
-    color: var(--text-color-green);
-    padding: 7px 12px 0 12px;
+  font-size: 10px;
+  color: var(--text-color-green);
+  padding: 7px 12px 0 12px;
 }
 
 .contents-news {
-    font-size: 10px;
-    color: var(--text-color-dark-gray);
-    padding: 12px;
+  font-size: 10px;
+  color: var(--text-color-dark-gray);
+  padding: 12px;
 }
 
 .more-contents {
-    font-size: 14px;
-    color: var(--text-color-light-pink);
-    padding: 12px;
+  font-size: 14px;
+  color: var(--text-color-light-pink);
+  padding: 12px;
 }
 
 .load-more {
-    background-color: var(--bg-color-light-pink);
-    color: var(--text-color-white);
-    width: 244px;
-    height: 67px;
-    font-size: 18px;
-    margin: 28px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--bg-color-light-pink);
+  color: var(--text-color-white);
+  max-width: 244px;
+  min-height: 67px;
+  font-size: 18px;
+  margin: 28px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#choose-your-games {
+  background-color: var(--bg-color-ligth-gray);
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#choose-your-games h2 {
+  font-size: 24px;
+  color: var(--text-color-green);
+  display: flex;
+  justify-content: center;
+  padding: 40px 122px 28px 122px;
+}
+
+.your-games-card {
+  background-color: var(--bg-color-white);
+  width: calc(100% - 20px);
+  margin: 0px 10px 28px 10px;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title-game-card {
+  font-size: 18px;
+  color: var(--text-color-dark-gray);
+  padding: 28px 40px 0px 40px;
+  display: flex;
+  text-align: center;
+}
+
+.image-game-card {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.your-games-card h4 {
+  font-size: 36px;
+  color: var(--text-color-green);
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.your-games-card p {
+  font-size: 12px;
+  color: var(--text-color-dark-gray);
+}
+
+.your-games-card p span {
+  font-size: 14px;
+  color: var(--text-color-green);
+  font-weight: 700;
 }
