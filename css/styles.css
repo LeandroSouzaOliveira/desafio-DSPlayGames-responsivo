@@ -16,6 +16,7 @@
   --text-color-dark-gray: #797979;
   --text-color-green: #38AF90;
   --text-color-light-pink: #DD7E92;
+  --line-horizontal-color: #38AF90;
 }
 
 header {
@@ -47,6 +48,13 @@ a, a:hover {
   color: unset;
 }
 
+hr {
+    width: 90%;
+    margin: 3px 12px 1px 12px;
+    border-width: 1px;
+    border-color: var(--line-horizontal-color);
+}
+
 /*Id's and Class*/
 .container {
   width: 100%;
@@ -58,8 +66,8 @@ a, a:hover {
     border-radius: 8px;
 }
 
-.container-bg {
-    background-color: var(--bg-color-ligth-gray);
+#latest-news {
+    margin: 28px 10px;
 }
 
 #latest-news h2 {
@@ -69,6 +77,14 @@ a, a:hover {
     text-decoration: none;
     display: flex;
     justify-content: center;
+}
+
+.bg-news-container {
+    background-color: var(--bg-color-ligth-gray);
+}
+
+.news-contents-container {
+    margin-bottom: 28px;
 }
 
 .title-news {
