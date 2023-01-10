@@ -96,14 +96,17 @@
                         <input class="register-form-email" type="email" placeholder="Email">
                         <div class="register-form-platform">
                             <label for="ctrl-gaming-platform">Qual sua plataforma preferida?</label><br>
-                            <input type="radio" name="platform" id="ctrl-platform-1">
-                            <label for="ctrl-platform-1">PC</label><br>
-                            <input type="radio" name="platform" id="ctrl-platform-2">
-                            <label for="ctrl-platform-2">Xbox</label><br>
-                            <input type="radio" name="platform" id="ctrl-platform-3">
-                            <label for="ctrl-platform-3">Playstation</label>
+                            <label for="ctrl-platform-1"><input type="radio" name="platform" id="ctrl-platform-1">
+                                PC</label><br>
+                            <label for="ctrl-platform-2"><input type="radio" name="platform" id="ctrl-platform-2">
+                                Xbox</label><br>
+                            <label for="ctrl-platform-3"><input type="radio" name="platform" id="ctrl-platform-3">
+                                Playstation</label>
                         </div>
-                        <label class="register-form-receive-news" for="receive-news"><input type="checkbox" name="news" id="receive-news">Desejo receber novidades.</label>
+                        <span class="register-form-receive-news">
+                            <input type="checkbox" name="news" id="receive-news">
+                            <label for="receive-news">Desejo receber novidades.</label>
+                        </span>
                         <input class="register-form-submit" type="submit" value="Enviar">
                         <input class="register-form-reset" type="reset" value="Limpar">
                     </div>
@@ -111,12 +114,15 @@
             </div>
         </section>
     </main>
-    <footer>
-        <a href="#">@dsplaygames</a>
-        <a href="#">/dsplaygames</a>
-        <p>DS Play Games Ltda. Todos direitos reservados</p>
-        <a href="#">Política de privacidade</a>
-        <a href="">Termos de uso</a>
+
+    <footer class="container">
+        <div class="footer-items">
+            <a class="footer-items-instagram" href="#">@dsplaygames</a>
+            <a class="footer-items-youtube" href="#">/dsplaygames</a>
+            <p class="footer-items-corporation">DS Play Games Ltda. Todos direitos reservados</p>
+            <a href="#">Política de privacidade</a>
+            <a class="footer-items-terms" href="">Termos de uso</a>
+        </div>
     </footer>
 </body>
 

@@ -6,6 +6,7 @@
   --bg-color-ligth-gray: #f0f0f0;
   --bg-color-light-pink: #dd7e92;
   --bg-color-white: #fff;
+  --br-color-light-black: #383838;
   --text-color-white: #fff;
   --text-color-dark-gray: #797979;
   --text-color-green: #38af90;
@@ -59,6 +60,12 @@ hr {
   border-color: var(--line-horizontal-color);
 }
 
+footer {
+  background-color: var(--br-color-light-black);
+  color: var(--text-color-white);
+  font-size: 14px;
+}
+
 /*Id's and Class*/
 .container {
   width: 100%;
@@ -90,7 +97,7 @@ hr {
   width: calc(100% - 20px);
   margin: 28px 10px;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.30);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
 }
@@ -158,7 +165,7 @@ hr {
   width: calc(100% - 20px);
   margin: 0px 10px 28px 10px;
   border-radius: 8px 8px 0px 0px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.30);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,21 +219,22 @@ hr {
 .register-card {
   background-color: var(--bg-color-ligth-gray);
   width: calc(100% - 20px);
-  margin: 0px 10px 28px 10px;
+  margin: 0 auto;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.30);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .register-form-text {
   background-color: var(--bg-color-white);
   border: 1px solid var(--border-color-dark-gray);
   border-radius: 4px;
-  width: 280px;
-  height: 50px;
-  margin: 50px 10px 0 10px;
+  max-width: 280px;
+  min-height: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .register-form-text::placeholder {
@@ -238,9 +246,9 @@ hr {
   background-color: var(--bg-color-white);
   border: 1px solid var(--border-color-dark-gray);
   border-radius: 4px;
-  width: 280px;
-  height: 50px;
-  margin: 0 10px;
+  max-width: 280px;
+  min-height: 50px;
+  margin: 0 10px 20px 10px;
 }
 
 .register-form-email::placeholder {
@@ -250,10 +258,12 @@ hr {
 
 .register-form-platform {
   color: var(--text-color-dark-gray);
+  margin: 0 10px 8px 10px;
 }
 
 .register-form-receive-news {
   color: var(--text-color-dark-gray);
+  padding: 8px;
 }
 
 .register-form-submit {
@@ -284,4 +294,29 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-items {
+  max-width: 320px;
+  min-height: 302px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-items-instagram {
+  margin-top: 30px;
+}
+
+.footer-items-youtube {
+  margin-bottom: 40px;
+}
+
+.footer-items-corporation {
+  margin-bottom: 40px;
+}
+
+.footer-items-terms {
+  margin-bottom: 30px;
 }
