@@ -10,7 +10,9 @@
   --text-color-dark-gray: #797979;
   --text-color-green: #38af90;
   --text-color-light-pink: #dd7e92;
+  --text-color-medium-gray: #c4c4c4;
   --line-horizontal-color: #38af90;
+  --border-color-dark-gray: #797979;
 }
 
 * {
@@ -88,6 +90,7 @@ hr {
   width: calc(100% - 20px);
   margin: 28px 10px;
   border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.30);
   display: flex;
   flex-direction: column;
 }
@@ -128,6 +131,7 @@ hr {
   max-width: 244px;
   min-height: 67px;
   font-size: 18px;
+  border-radius: 8px;
   margin: 28px auto;
   display: flex;
   align-items: center;
@@ -154,6 +158,7 @@ hr {
   width: calc(100% - 20px);
   margin: 0px 10px 28px 10px;
   border-radius: 8px 8px 0px 0px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.30);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +169,6 @@ hr {
   font-size: 18px;
   color: var(--text-color-dark-gray);
   padding: 28px 40px 0px 40px;
-  display: flex;
   text-align: center;
 }
 
@@ -189,4 +193,95 @@ hr {
   font-size: 14px;
   color: var(--text-color-green);
   font-weight: 700;
+}
+
+#register {
+  background-color: var(--bg-color-white);
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#register h2 {
+  font-size: 24px;
+  color: var(--text-color-dark-gray);
+  text-align: center;
+  padding: 40px 44px 16px 44px;
+}
+
+.register-card {
+  background-color: var(--bg-color-ligth-gray);
+  width: calc(100% - 20px);
+  margin: 0px 10px 28px 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.30);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form-text {
+  background-color: var(--bg-color-white);
+  border: 1px solid var(--border-color-dark-gray);
+  border-radius: 4px;
+  width: 280px;
+  height: 50px;
+  margin: 50px 10px 0 10px;
+}
+
+.register-form-text::placeholder {
+  color: var(--text-color-medium-gray);
+  padding: 13px 128px 13px 22px;
+}
+
+.register-form-email {
+  background-color: var(--bg-color-white);
+  border: 1px solid var(--border-color-dark-gray);
+  border-radius: 4px;
+  width: 280px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.register-form-email::placeholder {
+  color: var(--text-color-medium-gray);
+  padding: 13px 128px 13px 22px;
+}
+
+.register-form-platform {
+  color: var(--text-color-dark-gray);
+}
+
+.register-form-receive-news {
+  color: var(--text-color-dark-gray);
+}
+
+.register-form-submit {
+  background-color: var(--bg-color-light-pink);
+  color: var(--text-color-white);
+  width: 244px;
+  height: 67px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form-reset {
+  background-color: var(--bg-color-white);
+  color: var(--text-color-light-pink);
+  width: 244px;
+  height: 67px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
