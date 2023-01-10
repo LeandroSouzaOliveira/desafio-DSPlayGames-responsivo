@@ -26,6 +26,7 @@
 header {
   background-color: var(--bg-color-green);
   color: var(--text-color-white);
+  width: 100%;
   font-size: 18px;
   height: 90px;
   display: flex;
@@ -66,6 +67,7 @@ footer {
   font-size: 14px;
   max-width: 960px;
   margin: 0 auto;
+  width: 100%;
 }
 
 /*Id's and Class*/
@@ -83,11 +85,12 @@ footer {
   background-color: var(--bg-color-white);
   max-width: 960px;
   margin: 0 auto;
+  width: 100%;
 }
 
 #latest-news h2 {
   color: var(--text-color-dark-gray);
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 40px 0px 8px 0px;
   text-decoration: none;
   display: flex;
@@ -105,7 +108,7 @@ footer {
 }
 
 .title-news {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text-color-green);
   padding: 16px 12px 3px 12px;
 }
@@ -154,6 +157,7 @@ footer {
   background-color: var(--bg-color-ligth-gray);
   max-width: 960px;
   margin: 0 auto;
+  width: 100%;
 }
 
 #choose-your-games h2 {
@@ -210,6 +214,7 @@ footer {
   background-color: var(--bg-color-white);
   max-width: 960px;
   margin: 0 auto;
+  width: 100%;
 }
 
 #register h2 {
@@ -223,6 +228,7 @@ footer {
 .register-card {
   background-color: var(--bg-color-ligth-gray);
   width: calc(100% - 20px);
+  max-width: 300px;
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -285,6 +291,7 @@ footer {
 }
 
 .footer-items {
+  width: calc(100% - 20px);
   max-width: 320px;
   min-height: 302px;
   margin: 0 auto;
@@ -307,4 +314,14 @@ footer {
 
 .footer-items-terms {
   margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  #latest-news h2 {
+    font-size: 24px;
+  }
+
+  .title-news {
+    font-size: 8px;
+  }
 }
